@@ -208,7 +208,7 @@ Checkbox का उपयोग तब होता है जब User एक �
 <!-- <input type="checkbox" id="html">
 <label for="html">HTML</label> -->
 
-<form >
+<!-- <form >
     <label for="name">Name:</label>
     <input type="text" placeholder="Enter your name" id="name"><br><br>
 
@@ -247,7 +247,58 @@ Checkbox का उपयोग तब होता है जब User एक �
     <label for="python">Python</label><br>
 
     <input type="submit" value="Submit">
-</form>
+</form> -->
+
+
+<!-- Dropdown का उपयोग तब होता है जब User को एक ही Option चुनना होता है। -->
+ <form >
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Enter your name" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" placeholder = "Enter your email" id="email" name="email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Enter your password" id="password" name="password" required><br>
+
+    <label >Select your Gender:</label><br>
+
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" name="gender" id="other">
+    <label for="other">Other</label><br>
+
+    <label for="skills">Select Your Skills :</label><br>
+
+    <input type="checkbox" name="skills" id="html">
+    <label for="html">HTML</label><br>
+
+    <input type="checkbox" name="skills" id="css">
+    <label for="css">CSS</label><br>
+
+    <input type="checkbox" name="skills" id="javascript">
+    <label for="javascript">JavaScript</label><br>
+
+    <input type="checkbox" name="skills" id="python">
+    <label for="python">Python</label><br>
+
+
+    <label for="branch">Select Your Branch :</label><br>
+
+    <select id="branch" name="branch">
+        <option value="cse">CSE</option>
+        <option value="me">ME</option>
+        <option value="it">IT</option>
+        <option value="ece">ECE</option>
+    </select><br>
+
+    <button type="submit">Submit</button>
+ </form>
+
 
 
 </body>
