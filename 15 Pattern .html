@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <!-- pattern का इस्तेमाल तब करते हैं जब हमें input का specific format चाहिए। -->
+     <form>
+        <label for="mobile">Mobile Number : </label>
+        <input type="text" pattern="[0-9]{10}" id="mobile" name="mobile" required><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <!-- जब हमें user से एक से ज्यादा lines का text लेना हो, तब <textarea> इस्तेमाल करते हैं। -->
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="4" cols="30" required placeholder="Write your opinion"></textarea>
+
+
+        <!-- <button type="submit">Submit</button> -->
+     </form>
+
+
+
+</body>
+</html>
