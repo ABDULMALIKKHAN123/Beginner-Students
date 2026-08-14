@@ -7,20 +7,44 @@
 </head>
 <body>
     <!-- pattern का इस्तेमाल तब करते हैं जब हमें input का specific format चाहिए। -->
-     <form>
+     <!-- <form>
         <label for="mobile">Mobile Number : </label>
         <input type="text" pattern="[0-9]{10}" id="mobile" name="mobile" required><br>
 
         <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" name="dob" required><br>
+        <input type="date" id="dob" name="dob" required><br> -->
 
         <!-- जब हमें user से एक से ज्यादा lines का text लेना हो, तब <textarea> इस्तेमाल करते हैं। -->
-            <label for="address">Address</label>
-            <textarea name="address" id="address" rows="4" cols="30" required placeholder="Write your opinion"></textarea>
+            <!-- <label for="address">Address</label>
+            <textarea name="address" id="address" rows="4" cols="30" required placeholder="Write your opinion"></textarea><br>
 
 
-        <!-- <button type="submit">Submit</button> -->
-     </form>
+            <label for="branch">Select your branch : </label>
+            <select name="branch" id="branch">
+                 <option value="cse">CSE</option>
+                 <option value="csit">CSIT</option>
+            </select><br>
+            <button type="submit">Submit</button>
+     </form> -->
+
+
+
+     <!-- disabled → option select नहीं कर सकते
+          selected → शुरुआत में यही दिखेगा
+          required → actual branch select करना जरूरी -->
+    <form>
+    <label for="year">Select Your Year:</label>
+
+    <select name="year" id="year" required>
+        <option value="" disabled selected>Select Your Year</option>
+        <option value="1st">1st Year</option>
+        <option value="2nd">2nd Year</option>
+        <option value="3rd">3rd Year</option>
+        <option value="4th">4th Year</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
 
 
 
